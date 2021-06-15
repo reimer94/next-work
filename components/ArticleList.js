@@ -7,7 +7,7 @@ const ArticleList = ({ articles }) => {
       {!articles
         ? "cargando..."
         : articles.map((article, index) => {
-            return <ArticleItem article={article} />;
+            return <ArticleItem key={index} article={article} />;
           })}
     </div>
   );
